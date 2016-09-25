@@ -7,19 +7,10 @@
     </head>
     <body>
         <script>
-            var x;
-            var y;
             var z="";
-            for (y=1; y<=8; y++) {
-                if (y % 2 == 0) {
-                    for (x=1; x<=8; x++) {
-                    z=z+" #";
-                    }   
-                }
-                else {
-                    for (x=1; x<=8; x++) {
-                    z=z+"# ";
-                    }   
+            for (var y=1; y<=8; y++) {
+                for (var x=1; x<=8; x++) {
+                    (y % 2 == 0) ? z=z+" #" : z=z+"# ";
                 }
                 z=z+"\n";
             }
