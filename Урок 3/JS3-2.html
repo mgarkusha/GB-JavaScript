@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var i;
+            for (i=1; i<=100; i++)
+                {
+                    if (i % 3 == 0 && i % 5 == 0) {
+                        console.log("FizzBuzz");
+                        continue;
+                    }                        
+                    if (i % 3 == 0) {
+                        console.log("Fizz");
+                        continue;
+                    }
+                    if (i % 5 == 0) {
+                        console.log("Buzz");
+                        continue;
+                    }
+                    console.log(i);
+                }
+        </script>
+    </body>
+</html>
