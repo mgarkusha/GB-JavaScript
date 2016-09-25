@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var x;
+            var y;
+            var z="";
+            for (y=1; y<=8; y++) {
+                if (y % 2 == 0) {
+                    for (x=1; x<=8; x++) {
+                    z=z+" #";
+                    }   
+                }
+                else {
+                    for (x=1; x<=8; x++) {
+                    z=z+"# ";
+                    }   
+                }
+                z=z+"\n"
+            }
+            console.log(z);
+        </script>
+    </body>
+</html>
