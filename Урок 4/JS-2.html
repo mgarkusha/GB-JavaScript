@@ -7,7 +7,28 @@
     </head>
     <body>
         <script>
-           
+//            function countBS(myString) {
+//                var counter = 0;                
+//                for (var i = 0; i<=myString.length; i++) {
+//                    if (myString.charAt(i) == "B") {
+//                       counter++;
+//                    }
+//                }
+//                return counter;
+//            }
+//            console.log(countBS("Baaa1aba"));
+//            console.log(countBS("BbbsBdfb"));
+    
+            function countChar(myString, myChar) {
+                var counter = 0;                
+                for (var i = 0; i<=myString.length; i++) {
+                    if (myString.charAt(i) == myChar) {
+                       counter++;
+                    }
+                }
+                return counter;
+            }
+            console.log(countChar("sdfsaBdrtB", "B"));
         </script>
     </body>
 </html>
