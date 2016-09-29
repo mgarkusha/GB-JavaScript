@@ -9,7 +9,7 @@
         <script>
 //            function countBS(myString) {
 //                var counter = 0;                
-//                for (var i = 0; i<=myString.length; i++) {
+//                for (var i = 0; i <= myString.length; i++) {
 //                    if (myString.charAt(i) == "B") {
 //                       counter++;
 //                    }
@@ -21,14 +21,15 @@
     
             function countChar(myString, myChar) {
                 var counter = 0;                
-                for (var i = 0; i<=myString.length; i++) {
+                for (var i = 0; i <= myString.length; i++) {
                     if (myString.charAt(i) == myChar) {
                        counter++;
                     }
                 }
-                return counter;
+                return  console.log("В слове " +myString+ " число букв " +myChar+ " равно " +counter);
             }
-            console.log(countChar("sdfsaBdrtB", "B"));
+           countChar("sdfsaBdrtB", "B");
+                      
         </script>
     </body>
 </html>
