@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            //Пока не доделано. Доделаю к след. занятию.
+            function convertColor(color_num1, color_num2, color_num3) {
+                if (color_num1 || color_num2 || color_num3 > 255) {
+                    alert("Введите корректное значение")
+                }
+                return console.log("Ваш цвет (" + color_num1 + "," + color_num2 + "," + color_num3 + ") в 16 разрядном виде будет = " + color_num1.toString(16) + color_num2.toString(16) + color_num3.toString(16))
+            }
+            var color_num1 = parseInt(prompt("Введите первое число:"));
+            var color_num2 = parseInt(prompt("Введите второе число:"));
+            var color_num3 = parseInt(prompt("Введите третье число:"));
+            
+            convertColor(color_num1, color_num2, color_num3);
+            
+        </script>
+    </body>
+</html>
