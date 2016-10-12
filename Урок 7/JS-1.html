@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .block_black {
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: dimgray;
+                color: white;
+                border: 1px solid white;
+                float: left;
+            }
+            .block_white {
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border: 1px solid black;
+                float: left;
+            }
+            .block_row {
+                display: block;
+                float: left;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            for (var i = 0; i <= 9; i++) {
+                var div_row = document.createElement('div');
+                div_row.className = "block_row";
+                document.body.appendChild(div_row);
+                if (i % 2 == 0) {
+                    for (var j = 0; j <= 9; j++) {
+                        var div_col = document.createElement('div');
+                        (j % 2 == 0) ? div_col.className = "block_white" : div_col.className = "block_black";
+                        (j == 0 || j == 9 || i == 0 || i == 9) ? div_col.innerHTML = j : div_col.innerHTML = '';
+                        div_row.appendChild(div_col);
+                    }
+                }
+                else {
+                    for (var j = 0; j <= 9; j++) {
+                        var div_col = document.createElement('div');
+                        (j % 2 == 0) ? div_col.className = "block_black" : div_col.className = "block_white";
+                        (j == 0 || j == 9 || i == 0 || i == 9) ? div_col.innerHTML = j : div_col.innerHTML = '';
+                        div_row.appendChild(div_col);
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
