@@ -40,7 +40,19 @@
                     for (var j = 0; j <= 9; j++) {
                         var div_col = document.createElement('div');
                         (j % 2 == 0) ? div_col.className = "block_white" : div_col.className = "block_black";
-                        (j == 0 || j == 9 || i == 0 || i == 9) ? div_col.innerHTML = j : div_col.innerHTML = '';
+                        (i == 0 && j != 0 && j != 9) ? div_col.innerHTML = j : div_col.innerHTML = '';
+                        if ((j == 0 && i == 2) || (j == 9 && i == 2)) {
+                            div_col.innerHTML = 'B';  
+                        } 
+                        else if ((j == 0 && i == 4) || (j == 9 && i == 4)) {
+                            div_col.innerHTML = 'D';  
+                        }
+                        else if ((j == 0 && i == 6) || (j == 9 && i == 6)) {
+                            div_col.innerHTML = 'F';  
+                        }
+                        else if ((j == 0 && i == 8) || (j == 9 && i == 8)) {
+                            div_col.innerHTML = 'H';  
+                        }
                         div_row.appendChild(div_col);
                     }
                 }
@@ -48,7 +60,19 @@
                     for (var j = 0; j <= 9; j++) {
                         var div_col = document.createElement('div');
                         (j % 2 == 0) ? div_col.className = "block_black" : div_col.className = "block_white";
-                        (j == 0 || j == 9 || i == 0 || i == 9) ? div_col.innerHTML = j : div_col.innerHTML = '';
+                        (i == 9 && j != 0 && j != 9) ? div_col.innerHTML = j : div_col.innerHTML = '';
+                        if ((j == 0 && i == 1) || (j == 9 && i == 1)) {
+                            div_col.innerHTML = 'A';  
+                        }
+                        else if ((j == 0 && i == 3) || (j == 9 && i == 3)) {
+                            div_col.innerHTML = 'C';  
+                        }
+                        else if ((j == 0 && i == 5) || (j == 9 && i == 5)) {
+                            div_col.innerHTML = 'E';  
+                        }
+                        else if ((j == 0 && i == 7) || (j == 9 && i == 7)) {
+                            div_col.innerHTML = 'J';  
+                        }
                         div_row.appendChild(div_col);
                     }
                 }
